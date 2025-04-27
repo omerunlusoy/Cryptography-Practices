@@ -1,4 +1,4 @@
-# End-to-end Encryption (E2EE) Core
+# End-to-end Encryption (E2EE) Core 
 
 ## Asymmetric Cryptography (Public - Key Cryptography)
 - Diffie – Hellman key exchange
