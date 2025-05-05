@@ -44,7 +44,7 @@ server_shared_secret = pow(client_public, server_private, P)
 
 # hash it to derive symmetric key
 shared_key = hashlib.sha256(str(server_shared_secret).encode()).hexdigest()
-print("🔐 SHA-256 of shared secret (usable as symmetric key):", shared_key)
+print("SHA-256 of shared secret (usable as symmetric key):", shared_key)
 
 # Close the connection
 conn.close()

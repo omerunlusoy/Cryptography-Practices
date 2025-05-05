@@ -35,6 +35,6 @@ try:
         ),
         hashes.SHA256()
     )
-    print("✅ Transaction signature is valid.")
+    print("Transaction signature is valid.")
 except Exception as e:
-    print("❌ Signature verification failed:", e)
+    print("Signature verification failed:", e)

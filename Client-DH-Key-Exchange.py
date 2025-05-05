@@ -53,12 +53,12 @@ client_shared_secret = pow(server_public, client_private, P)
 
 # hash it to derive symmetric key
 shared_key = hashlib.sha256(str(client_shared_secret).encode()).hexdigest()
-print("🔐 SHA-256 of shared secret (usable as symmetric key):", shared_key)
+print("SHA-256 of shared secret (usable as symmetric key):", shared_key)
 
 # ⏱️ End DH timer after receiving
 end_time = time.time()
 roundtrip_time = end_time - start_time
-print(f"⏱️ Roundtrip time: {roundtrip_time:.6f} seconds")
+print(f"Roundtrip time: {roundtrip_time:.6f} seconds")
 
 # Close the connection
 client_socket.close()

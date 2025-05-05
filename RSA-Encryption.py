@@ -53,8 +53,8 @@ if __name__ == "__main__":
 
     message = b"Hello RSA Encryption!"
     encrypted = rsa_encrypt(public_key, message)
-    print("🔐 Encrypted message:", encrypted.hex())
+    print("Encrypted message:", encrypted.hex())
 
     decrypted = rsa_decrypt(private_key, encrypted)
-    print("✅ Decrypted message:", decrypted.decode())
+    print("Decrypted message:", decrypted.decode())
 

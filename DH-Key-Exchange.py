@@ -31,7 +31,7 @@ print(f"Bob's Shared Secret:   {bob_shared_secret}")
 
 # They should be the same
 assert alice_shared_secret == bob_shared_secret
-print("\n✅ Shared secret matches!")
+print("\nShared secret matches!")
 
 
 # with larger numbers -------------------------------------------------------------------------------------------------
@@ -58,9 +58,9 @@ bob_public = pow(G, bob_private, P)
 alice_shared = pow(bob_public, alice_private, P)
 bob_shared = pow(alice_public, bob_private, P)
 
-print("✅ Shared secret matches:", alice_shared == bob_shared)
+print("Shared secret matches:", alice_shared == bob_shared)
 
 # Optional: hash it to derive symmetric key
 shared_key = hashlib.sha256(str(alice_shared).encode()).hexdigest()
-print("🔐 SHA-256 of shared secret (usable as symmetric key):")
+print("SHA-256 of shared secret (usable as symmetric key):")
 print(shared_key)

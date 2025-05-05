@@ -1,4 +1,5 @@
 # End-to-end Encryption (E2EE) Core 
+This project implements well-known ciphers and hash functions for educational purposes. Some implementations are pure while most of them are wrappers for well-known packages such as Crypto, argon2d, and cryptography.
 
 ## Asymmetric Cryptography (Public - Key Cryptography)
 - Diffie – Hellman key exchange
