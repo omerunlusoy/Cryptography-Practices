@@ -25,7 +25,7 @@ def main() -> None:
     print("\nX3DH handshake successful. Shared secret:", alice_ss.hex())
 
     """Run a four-message Alice ↔ Bob exchange to verify ratchet behavior."""
-    print("\n[Demo] Starting Double Ratchet test...\n")
+    print("\nStarting Double Ratchet test...\n")
 
     # Alice derives initial_root_key and initial_chain_key to start a Double Ratchet session with Bob
     alice_initial_root_key, alice_initial_chain_key = DoubleRatchetSession.derive_root_and_chain_keys(root_key=b"\x00" * 32, dh_shared_secret=alice_ss)
@@ -62,7 +62,7 @@ def main() -> None:
             print(f"{speaker}->Alice :", msg.decode())
             print("Alice decrypted :", rec.decode(), "\n")
 
-    print("[✓] Demo complete – all messages round-tripped successfully.")
+    print("Demo complete – all messages round-tripped successfully.")
 
 
 if __name__ == "__main__":

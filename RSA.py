@@ -97,6 +97,6 @@ if __name__ == "__main__":
     ciphertext = rsa_encrypt(message, public)
     decrypted = rsa_decrypt(ciphertext, private)
 
-    print("\n🔐 Original Message:", message)
-    print("🧾 Encrypted:", ciphertext)
-    print("✅ Decrypted:", decrypted)
+    print("\nOriginal Message:", message)
+    print("Encrypted:", ciphertext)
+    print("Decrypted:", decrypted)
